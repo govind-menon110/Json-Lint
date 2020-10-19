@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  nginx:
+    restart: always
+    build: 
+      context: ./json_linter
+      dockerfile: Dockerfile
+    ports:
+      - "80:80" 
